@@ -1,0 +1,66 @@
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* Card styles */
+.card {
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Slight rounding of corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  overflow: hidden;
+}
+
+/* Card header styles */
+.card-header {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 15px 20px; /* Space around the content */
+  cursor: pointer; /* Cursor indicates clickable */
+}
+
+/* Header link styles */
+.card-header a {
+  font-weight: bold; /* Make the question bold */
+  font-size: 16px; /* Set a readable font size */
+  color: #007bff; /* Bootstrap primary blue color */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Full width clickable area */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Change color on hover */
+.card-header a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Collapsed state styles */
+.card-header a.collapsed {
+  color: #333; /* Darker color for collapsed items */
+}
+
+/* Collapsed body styles */
+.collapse {
+  border-top: 1px solid #dee2e6; /* Light border on top */
+  background-color: #fff; /* White background for the content */
+  transition: height 0.3s ease; /* Smooth opening/closing */
+}
+
+/* Card body styles */
+.card-body {
+  padding: 20px; /* Space around the answer content */
+  font-size: 15px; /* Set a readable font size */
+  line-height: 1.6; /* Comfortable line height */
+  color: #555; /* Dark gray text color */
+}
+
+/* Accordion transition for smooth opening and closing */
+.collapse.show {
+  transition: height 0.3s ease; /* Smooth height transition */
+}
+
+/* Specific styling for the last card to remove the border-bottom */
+.card:last-child .collapse {
+  border-bottom: none;
+}

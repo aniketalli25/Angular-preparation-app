@@ -1,1 +1,179 @@
-/* You can add global styles to this file, and also import other style files */
+/* global styles (styles.css) */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+header {
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  color: white;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header.dark-mode {
+  background-color: #1e1e1e;
+}
+
+.card-header button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.card-header button:focus {
+  outline: none;
+}
+
+.card-header.dark-mode button {
+  color: #66c0f4;
+}
+
+.card-body {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 20px;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card-body.dark-mode {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+footer.dark-mode {
+  background-color: #1e1e1e;
+}
+
+h2.text-center {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #007bff;
+  text-align: center;
+}
+
+h2.text-center.dark-mode {
+  color: #66c0f4;
+}
+
+.accordion .card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accordion .card.dark-mode {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.accordion .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.accordion .card-header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion .card-header.dark-mode {
+  background-color: #1e1e1e;
+}
+
+.accordion .card-header:hover {
+  background-color: #0056b3;
+}
+
+.accordion .card-header.dark-mode:hover {
+  background-color: #003d7a;
+}
+
+.accordion .card-body {
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 8px 8px;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion .card-body.dark-mode {
+  background-color: #2a2a2a;
+}
+
+.accordion .card-body:hover {
+  background-color: #e9ecef;
+}
+
+.accordion .card-body.dark-mode:hover {
+  background-color: #1e1e1e;
+}
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+a {
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+a.dark-mode {
+  color: #66c0f4;
+}
+
+a.dark-mode:hover {
+  color: #003d7a;
+}

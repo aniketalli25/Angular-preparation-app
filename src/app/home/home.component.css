@@ -1,0 +1,75 @@
+/* Hero Section */
+.bg-primary {
+  font-family: 'Arial', sans-serif; /* Font family */
+  font-weight: 700; /* Bold font for the main heading */
+  text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+.bg-primary h1 {
+  font-size: 2.5rem; /* Size of the hero heading */
+  line-height: 1.2; /* Spacing between lines */
+}
+
+.bg-primary .lead {
+  font-size: 1.2rem; /* Size of the lead text */
+  font-weight: 400; /* Regular weight for readability */
+  line-height: 1.5; /* Improved line spacing */
+}
+
+.bg-primary .btn {
+  font-size: 1rem; /* Button text size */
+  text-transform: uppercase; /* Uppercase text for buttons */
+  border-radius: 5px; /* Rounded corners for buttons */
+}
+
+/* Introduction Section */
+.container h2 {
+  font-family: 'Verdana', sans-serif; /* Font family for headings */
+  font-weight: 600; /* Semi-bold weight */
+  margin-bottom: 1rem; /* Space below the heading */
+}
+
+.container p {
+  font-family: 'Georgia', serif; /* Font family for paragraphs */
+  font-weight: 400; /* Regular weight */
+  line-height: 1.6; /* Increased line height for readability */
+}
+
+/* About Section */
+.bg-light h2 {
+  font-family: 'Verdana', sans-serif; /* Consistent font family */
+  font-weight: 600; /* Semi-bold weight */
+  margin-bottom: 1rem; /* Space below the heading */
+}
+
+.bg-light p {
+  font-family: 'Georgia', serif; /* Font family for paragraphs */
+  font-weight: 400; /* Regular weight */
+  line-height: 1.6; /* Improved readability */
+}
+
+.bg-light ul {
+  font-family: 'Georgia', serif; /* Font family for lists */
+  font-weight: 400; /* Regular weight */
+  line-height: 1.6; /* Consistent spacing */
+}
+
+/* Call-to-Action Section */
+.container.text-center h2 {
+  font-family: 'Arial', sans-serif; /* Font family for the CTA heading */
+  font-weight: 700; /* Bold weight for emphasis */
+  margin-bottom: 1rem; /* Space below the heading */
+}
+
+.container.text-center p.lead {
+  font-family: 'Georgia', serif; /* Font family for lead text */
+  font-weight: 400; /* Regular weight */
+  line-height: 1.5; /* Improved spacing */
+}
+
+.container.text-center .btn {
+  font-family: 'Arial', sans-serif; /* Font family for buttons */
+  font-size: 1rem; /* Button text size */
+  text-transform: uppercase; /* Uppercase text */
+  border-radius: 5px; /* Rounded corners */
+}

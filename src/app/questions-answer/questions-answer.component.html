@@ -1,0 +1,46 @@
+<section class="container my-5 pt-5">
+  <div class="row mb-4">
+    <div class="col-md-8">
+      <input
+        type="text"
+        id="searchInput"
+        class="form-control"
+        placeholder="Search for a question..."
+        [(ngModel)]="searchText"
+
+      />
+    </div>
+    <div class="col-md-4">
+      <select id="categorySelect" class="form-control" [(ngModel)]="selectedCategory">
+        <option value="all">All Categories</option>
+        <option value="basic">Basics</option>
+        <option value="advanced">Advanced</option>
+        <option value="performance">Performance</option>
+        <!-- Add more categories as needed -->
+      </select>
+    </div>
+  </div>
+</section>
+
+<!-- Q&A Section -->
+<section class="container">
+  <div class="accordion" id="accordionExample">
+    <div class="card mb-3" *ngFor="let question of questions; let i = index">
+      <div class="card-header">
+        <a class="collapsed d-block" data-toggle="collapse"
+           [attr.href]="'#collapse' + i"
+           aria-expanded="false"
+           [attr.aria-controls]="'collapse' + i"
+           data-parent="#accordionExample">
+          {{ i + 1 }}. {{ question.question }}  
+        </a>
+      </div>
+      <div [id]="'collapse' + i" class="collapse" [attr.data-parent]="'#accordionExample'">
+        <div class="card-body">
+          <p class="card-text">{{ question.answer }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
